@@ -1,0 +1,391 @@
+.questionIcon h4{
+	text-align: left;
+	margin: 0 0 5% 2%;
+}
+/* ------------ 問題icon ------------- */
+.cross{
+	cursor: pointer;
+}
+.branddesign{
+	background-image: url('02image/brand/branddesign.jpg');
+}
+.questionIcon{
+	text-align: center;
+}
+.questionIcon_item {
+	padding: 30px;
+	box-sizing:border-box;
+}
+.questionIcon_item .title-gray{
+	padding: 20px 0px 0px;
+}
+.questionIcon_content{
+	background-color: var(--black);
+	position: relative;
+}
+.questionIcon_content span{
+	color: #fff;
+	font-size: 26px;
+	position: absolute;
+	right: 5%;
+	top: 5%;
+}
+.questionIcon_content{
+	padding: 30px 15px 20px;
+	display: none;
+}
+.questionIcon_pic{
+	cursor: pointer;
+}
+.questionIcon_content p.slogan_content-white{
+	line-height:45px; 
+	margin: 0 20px  0px;
+	text-align: left;
+}
+.questionIcon .triangel_sm-before:before{
+	background-color: var(--black);
+	top: -9.5px;
+}
+.questionIcon_content a{
+	margin: 20px 0px 0px;
+}
+.questionIcon_content .content-white{
+	text-align: justify;
+	text-justify: auto;
+}
+.brandProcess_content h4{
+	color: var(--red);
+}
+.graphicDesign_pic_container{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 2% auto;
+}
+.graphicDesign_pic{
+	padding:2px 2px;
+	box-sizing: border-box;
+	position: relative;
+	text-align: center;
+}
+.graphicDesign_pic a{
+	display: inline-block;
+}
+.graphicDesign_title{
+	position: absolute;
+	background-color:hsla(250,0%,99%,.9);
+	display: inline-block;
+	text-align: center;
+}
+@media screen and (min-width:480px){
+/* ------------平面設計類別------------- */
+.logo_pic img:nth-child(1){
+	display: none;
+}
+.logo_pic,.card_pic{
+	order: -1;
+}
+.logo_pic{
+	width: 36.84%;
+}
+.card_pic{
+	width: 63.16%;	
+}
+.book_pic,.staff_pic,.package_pic{
+	width: 33.3333333%;
+}
+.logo_pic .graphicDesign_title{
+	top: 5%;
+	left: calc(50% - 45%);
+	width: 90%;	
+	height: 0;
+	padding-bottom:90%;
+}
+.logo_pic .graphicDesign_title h4{
+	margin-top: 45%;
+}
+.card_pic .graphicDesign_title{
+	top: 5%;
+	left: calc(50% - 45%);
+	width: 90%;	
+	height: 0;
+	padding-bottom:52%;
+}
+.card_pic .graphicDesign_title h4{
+	margin-top: 26%;
+}
+.staff_pic .graphicDesign_title,
+.package_pic .graphicDesign_title,
+.book_pic .graphicDesign_title{
+	top: 5%;
+	left: calc(50% - 45%);
+	width: 90%;	
+	height: 0;
+	padding-bottom:145%;
+}
+.staff_pic .graphicDesign_title h4,
+.package_pic .graphicDesign_title h4,
+.book_pic .graphicDesign_title h4{
+	margin-top: 73%;
+}
+.brandProcess_content{
+	padding: 40px 80px;
+}
+}
+/* ------------ 手機版 ------------- */
+
+@media screen and (max-width:767px){
+.brandProcess{
+	padding: 70px 0px 10px ;
+}
+.brandProcess h3 + p{
+	margin:1% 1% 4%;
+}
+
+.brandProcess .content-gray{
+	text-align: justify;
+	-ms-text-justify: auto;
+	text-justify: auto;
+	color: var(--gray_2);
+}
+.brandProcess_container{
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.brandProcess_content_box{
+	top: 0;
+	position: absolute;
+	order: 3;
+	text-align: center;
+	height: 100%;
+}
+.brandProcess_pic_box{
+	order: -2;
+}
+.brandProcess_content{
+	background-color: hsla(250, 0%, 100%, .9);
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+.brandProcess_header p{
+	display: none;
+}
+.brandProcess_content .subcontent-gray{
+	padding-bottom: 6px;
+	color: var(--gray_3);
+}
+.questionIcon_pic{
+	width: 16%;
+	display: inline-block;
+}
+.brandProcess h4{
+	line-height: 33px;
+}
+}
+@media screen and (max-width:479px){
+.questionIcon_pic{
+	width: 36%;
+	display: inline-block;
+}
+.brandProcess_content{
+	padding: 18px 59px 23px;
+}
+/* ------------平面設計類別------------- */
+.logo_pic,.staff_pic,.package_pic,.book_pic{
+	width: 50%;
+}
+.logo_pic .graphicDesign_title,
+.staff_pic .graphicDesign_title,
+.package_pic .graphicDesign_title,
+.book_pic .graphicDesign_title{
+	top: 20%;
+	left: calc(50% - 40%);
+	width: 80%;	
+	height: 0;
+	padding-bottom:100%;
+}
+.logo_pic .graphicDesign_title h4,
+.staff_pic .graphicDesign_title h4,
+.package_pic .graphicDesign_title h4,
+.book_pic .graphicDesign_title h4{
+	margin-top: 52%;
+}
+.card_pic .graphicDesign_title{
+	top: 25%;
+	left: calc(50% - 35%);
+	width: 70%;	
+	height: 0;
+	padding-bottom:30%;
+}
+.card_pic .graphicDesign_title h4{
+	margin-top: 18%;
+}
+.logo_pic img:nth-child(2),.brandProcess h3+.content-gray{
+	display: none;
+}
+.brandProcess .wrapper .brandProcess_container:nth-child(3){
+	margin-top: 2%;
+}
+}
+
+/* ------------ 平版 ------------- */
+@media screen and (min-width:768px){
+ul.menu>li.nav_content:nth-child(1):after{
+	width: 66px;
+}
+/* ------------ 問題icon ------------- */
+.questionIcon_item {
+	padding: 30px 10px;
+}
+.questionIcon_pic{
+	width: 22%;
+	display: inline-block;
+}
+.questionIcon_content{
+	text-align: center;
+	width: 80%;
+	padding: 30px 20px 0px;
+	margin: auto;
+}
+
+.questionIcon_content .content-white{
+	margin: 0px 4%;
+}	
+.questionIcon_content a{
+	margin: 20px 5px 20px ;
+}
+.questionIcon_content .slogan-white{
+	text-align: left;
+	margin: 0px 0px 1% 2%;
+}
+
+/* ------------ 品牌建立------------- */
+.brandProcess_content .subcontent-gray{
+	display: none;
+}
+ .brandProcess{
+ background-image: -webkit-linear-gradient(-90deg, var(--white_1) 0%, var(--white_1) 43%, #fff 43%, #fff 100%);
+ background-image: -o-linear-gradient(-90deg, var(--white_1) 0%, var(--white_1) 43%, #fff 43%, #fff 100%);
+ background-image: linear-gradient(-90deg, var(--white_1) 0%, var(--white_1) 43%, #fff 43%, #fff 100%);
+ padding: ;
+ margin:10% 0px ;
+ }
+.brandProcess .wrapper{
+	position:relative;
+	top : 40px;
+}
+.brandProcess h3{
+	margin: 0 0 1.5% 2%;
+}
+.brandProcess h3+.content-gray{
+	margin: 0 8% 5% 5%;
+}
+
+.brandProcess .content-gray{
+	box-sizing: border-box;
+	margin:0px 40px 5% ;
+}
+.brandProcess_container{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0px 40px;
+	text-align: center;
+	/* height: 100%; */
+}
+
+.brandProcess_content h4.title-gray{
+	text-align: left;
+	padding: 12px;
+}
+
+.brandProcess_content .content-gray{
+	font-size: 20px;
+	line-height: 29px;
+}
+.brandProcess_content{
+	margin-left: 100px;
+	display: inline-block;
+	position: relative;
+	text-align: left;
+	padding: 17px 0px 10px;
+
+}
+
+.brandProcess_content:before{
+	display: block;
+	position: absolute;
+	color: var(--red);
+	font-size:63px;
+	left: -91px;
+	top: -3px;
+	/* transform: translateY(-10px); */
+}
+.brandProcess_content1:before{content: '01';}
+.brandProcess_content2:before{content: '02';}
+.brandProcess_content3:before{content: '03';}
+.brandProcess_content4:before{content: '04';}
+}
+.questionIcon_content-active{
+	display: block;
+}
+/* ------------ 桌機 ------------- */
+@media screen and (min-width:1024px){
+.questionIcon-container{
+	display: flex;
+	flex-wrap: wrap;
+}
+.questionIcon_content_box{
+	order: 1;
+	text-align: left;
+}
+.questionIcon_pic:hover{
+	transform: rotateY(360deg);
+	transition: .8s;
+}
+.graphicDesign_pic{
+	padding:0px;
+	margin:0;
+}
+.questionIcon_item h4{
+	padding: 40px 0px 20px;
+}
+.graphicDesign_pic{
+	overflow: hidden;
+}
+
+.graphicDesign_pic img{
+	transition: .8s;
+}
+.graphicDesign_pic:hover img{
+	filter: blur(3px);
+	transition: .8s;
+	transform: scale(1.05);
+}
+.graphicDesign_pic h4{
+	transition: .8s;
+
+}
+.graphicDesign_pic:hover h4{
+	font-size: 30px;
+	transition: .8s;
+}
+
+.questionIcon_pic{
+	width: 36%;
+	display: inline-block;
+}
+.graphicDesign .wrapper:nth-child(2){
+	padding: 0px 100px;
+}
+}
+/* ------------ 大桌機 ------------- */
+@media screen and (min-width:1440px){
+.graphicDesign h3 span.title_deraction:after{
+	width: 94.5%;
+	right:-15px ;
+}
+.graphicDesign .wrapper:nth-child(2){
+	padding: 0px 140px;
+}
+}

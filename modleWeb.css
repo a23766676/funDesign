@@ -1,0 +1,165 @@
+.modleWeb{
+	background-image: url('02image/modleWeb/bg02 .jpg');
+	height: 80vh;
+}
+
+.banner_back{
+	padding: 30px 0px;
+}
+.banner_back p{
+	text-align: justify;
+}
+.modleWeb_banner a{
+	margin-top: 2%;
+}
+.step_1_title{
+	margin:18% 0 5% ;
+}
+.vedio .slogan_content,.step_1_title .slogan_content{
+	text-align: center;
+}
+.step_2{
+	padding-bottom: 50px;
+}
+h3{
+	position: relative;
+	padding: 30px 0 5px;
+}
+.modle{
+	padding: 10px;
+	margin: 15px 0;
+	position: relative;
+}
+.modle>img{
+	border-radius: 3px;
+	box-shadow: 0px 0px 5px var(--gray_3);
+}
+.step_2 h3:before,.step_1 h3:before{
+	display: block;
+	position: absolute;
+	color: var(--gray_3);
+	font-size: 14px;
+	text-align: center;
+	left:0;
+	right: 0;
+	top: -20px;
+	font-weight:100;
+	transform: translateY(-10px);
+}
+.step_1 h3:before{content: 'step 01';}
+.step_2 h3:before{content: 'step 02';}
+.step_1{
+	text-align: center;
+}
+.step_1 .more{
+	margin-top: 4%;
+}
+.link_pic{
+	display: none;
+}
+/* .vedio{
+	margin:30% 0 60% ;
+} */
+.vedio_youtube_container{
+	width: 100%;
+	height: 0;
+	padding-bottom: 66.037736%;
+	box-sizing: border-box;
+	position: relative;
+}
+.vedio iframe{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+@media screen and (min-width: 480px){
+.banner_back {
+	padding: 30px 50px;
+	text-align: center;
+}
+.modleWeb_banner p{
+	text-align: center;
+
+}
+}
+@media screen and (min-width: 768px){
+ul.menu>li.nav_content:nth-child(2):after{
+	width: 66px;
+}
+.modle3{
+	display: none;
+}
+.step_1_title{
+	margin:10% 0 5% ;
+}
+}
+@media screen and (min-width: 1024px){
+.step_1 h3:before{
+	font-size: 20px;
+	color: var(--gray_4);
+	top: -40px;
+}
+.step_1_content{
+	padding: 5px;
+	box-sizing: border-box;
+	margin-top: 150px;
+}
+.modle3{
+	display: block;
+}
+.modle1{
+	width: 83.4%;
+	margin-top: -9.4%;
+}
+.modle2{
+	width: 60.8%;
+	margin-top: 2.1%;
+	margin-left: 30%;
+}
+.modle4{
+	width: 22.2%;
+	margin-top: 1.2%;
+	margin-left: 1.7%;
+}
+.modle5{
+	width: 34.8%;
+	margin-top: 3.8%;
+	margin-left: 5.8%;
+}
+.modle6{
+	width: 28.4%;
+	margin-left: 3.8%;
+	margin-top: -14.2%;
+}
+.link_picBac{
+	opacity: 0;
+	transition: .8s;
+}
+.link_picBac:hover{
+	opacity: 1;
+	transition: .8s;
+}
+.link_picBac{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: hsla(20, 0%, 0%, .6);
+	margin: 10px;
+}
+.link_picBac .link_pic{
+	transform: rotate(-30deg);
+	left: 45%;
+	top: 45%;
+	transition: .5s;
+	opacity: 0.8;
+	position: absolute;
+	width: 10%;
+	display: block;
+}
+.link_picBac:hover .link_pic{
+	transform: rotate(0deg);
+	transition: .5s
+}
+}

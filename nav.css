@@ -1,0 +1,281 @@
+header{
+	position: relative;
+	z-index: 5;
+}
+nav h1 a{
+	font-size: 0;
+	width: 100px;
+
+}
+nav li a{
+	display:inline-block;
+	margin: auto;
+}
+nav{
+	text-align: center;
+	z-index: 10;
+}
+
+/* -------次選單------- */
+.webDesign_menu,.works_menu{
+	position: relative;
+}
+.fas{
+	color:var(--gray_3);
+	display: inline-block;
+	position: absolute;
+	line-height: 40px;
+	padding: 12px;
+	transform: rotate(360deg);
+	transition: .5s;
+
+}
+.webDesign_subMenu,.works_subMenu{
+	left: -10000px;
+	border: 2px solid var(--gray_4);
+	position: absolute;
+	background-color: var(--white_1);
+	opacity: 0;
+	z-index: 1;
+
+
+}
+.subMenu-active{
+	position: relative;
+	left: 0;
+	display:block;
+	opacity: 1;
+	transition: left 0s , opacity 1s;
+}
+nav .triangel_sm-before:before,nav .triangel_md-before:before{
+	border-top: 2px solid var(--gray_4);
+	border-left: 2px solid var(--gray_4);
+	background-color: var(--white_1);
+	z-index: 0;
+}
+
+.fas-active{
+	transform: rotate(180deg);
+	transition: .5s;
+}
+@media screen and (max-width:767px){
+*{
+	/* outline: 1px solid red; */
+}
+.logoCol_pic{display: none;}
+.logoRow_pic{width: 140px;}
+.phNav_wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+	width: 100%;
+	padding: 0px 10px;
+	box-sizing: border-box;
+	position: fixed;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	background-color: hsla(30, 10%, 98%, 1);
+	box-shadow: 0px 3px 5px var(--gray_4);
+	z-index: 10;
+}
+.phNav_container{
+	position: fixed;
+	height: 50px;
+	width: 100%;
+	overflow: hidden;
+	top: 0;
+}
+.phNav_container-active{
+	height: 100vh;
+}
+nav{
+	background-color: hsla(30, 10%, 99%, .98);
+	overflow-y:scroll;
+}
+.phNav-origin{
+	position: absolute;
+	/* font-size: 0; */
+	left: -200000px;
+	/* display: none; */
+	top: 10000px;
+	transition: left 0s 5s,top 3s;
+}
+.phNav-active{
+	top: 50px;
+	left: 0;
+	transition: left 0s,font-size .6s -0.1s,top .6s;
+	font-size:16px; 
+	width: 60%;
+	position: fixed;
+	height: 100vh;
+}
+.ph_hb-close{
+	position: relative;
+	z-index: -5;
+	width: 100%;
+	height: 100vh;
+}
+nav .menu > li a{
+	width: 100px;
+	padding: 20px 5px;
+}
+nav .menu > li+li{
+	/* margin:  10px 0px; */
+}
+nav .menu > li:nth-child(1){
+	margin:  20px 0px 0;
+}
+nav .menu > li a{
+	width: 100px;
+	padding: 20px 5px;
+}
+/* ---------------hamburger--------------- */
+.ph_hb{
+	padding: 10px;
+}
+.hb{
+	display: block;
+	height: 2px;
+	background-color: var(--gray_2);
+	border-radius: 20px ;
+	position: relative;
+	transition: .5s;
+
+}
+.hb:after{
+	content: '';
+	display: block;
+	height: 2px;
+	background-color: var(--gray_2);
+	position: absolute;
+	top: 4px;
+	transition: .5s;
+
+}
+.hb_1{
+	width: 23px;
+	margin-bottom: 6px;
+}
+.hb_1:after{
+	width: 17px;
+	right: 0;
+}
+.hb_2{
+	float: right;
+	width: 20px;
+}
+.hb_2:after{
+	width: 13px;
+	right: 0;
+}
+.hb_2-active{
+	margin-top: -2px;
+	width: 23px;
+	transform: rotate(-45deg);
+	transition: .8s;
+}
+.hb_1-active{
+	transform: rotate(45deg);
+	margin-top: 2px;
+	margin-bottom: 0px;
+	transition: .5s;
+}
+.fas{
+	top: 8px;
+	}
+
+
+
+
+
+}
+@media screen and (max-width: 479px){
+.phNav-active{
+	width: 100%;
+	position: fixed;
+	height: 100vh;
+	top: 50px;
+	left: 0;
+	transition: left 0s,font-size .6s -0.1s,top .6s;
+	font-size:16px;
+}
+
+}
+@media screen and (min-width:768px){
+
+.phNav_wrapper .logoRow_pic{display: none;}
+.logoCol_pic{
+	display: block;
+}
+.hb{display: none;}
+nav > ul li{
+	display: block;
+}
+nav{
+	position: fixed;
+	width: 100%;
+	background-color: hsla(10, 10%, 98%, 1);
+	box-shadow: 0px 2px 8px var(--gray_4);
+	z-index: 10;
+}
+nav ul{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav .menu > li a{
+	padding: 10px 5px;
+}
+.nav_content {
+	width: 120px;
+	transform: translateY(4px);
+	position: relative;
+}
+/* -------次選單------- */
+.webDesign_subMenu,.works_subMenu{
+	position: absolute;
+	display: block;
+	width: 150px;
+	z-index:5; 
+	box-sizing: border-box;
+}
+.fas{
+	top: -4px;
+}
+nav .triangel_sm-before:before,nav .triangel_md-before:before{
+	top: -16.5px;
+}
+ul.menu>li.nav_content:after{
+	content: '';
+	position: absolute;
+	display: block;
+	transition:width 1s;
+	background-color: var(--red);
+	height: 2px;
+	width: 0px;
+	right: 0;
+	left: 0;
+	margin: auto;
+	top: 50px;
+}
+}
+@media screen and (min-width:1024px){
+.webDesign_menu:hover .webDesign_subMenu,.works_menu:hover .works_subMenu {
+	position: absolute;
+	top: 77px;
+	display:block;
+	opacity: 1;
+	transition: left 0s , opacity 1s;
+	left: -15px;
+}
+
+.webDesign_menu:hover .fas,.works_menu:hover .fas{
+	transform: rotate(180deg);
+	transition: .5s;
+}
+ul.menu>li.nav_content:hover:after{
+	transition:width 1s;
+	width: 66px;
+}
+}
