@@ -1,0 +1,141 @@
+.digitalMarket{background-image:url('02image/degitalMarket/banner.jpg');}
+/* ------------ banner------------- */
+
+.banner{z-index: 1;}
+/* ------------ seo------------- */
+.seo {
+	text-align: center;
+}
+.seo_content{
+	background-color: var(--white_1);
+	margin-top:-8%;
+	display: inline-block;
+	padding: 30px;
+	width: 87%;
+	box-sizing: border-box;
+}
+.seo_content p{
+	text-align: justify;
+	text-justify: auto;
+}
+.seo_content h3{
+	padding:3px 0px 6px;
+}	
+/* ------------- 廣告投放 ------------- */
+.digitalMarket_content{
+	background-color: var(--white_1);
+	margin-top:-10%;
+	display: inline-block;
+	padding: 30px;
+	width: 87%;
+	box-sizing: border-box;
+	
+}
+.digitalMarket_content .slogan_content{
+	text-align: center;
+	padding: 6px 0px 5px;
+}
+.digitalMarket_content .content-gray{
+	text-align: justify;　/*　Firefox到此即可對齊　*/
+	text-justify: auto;　
+}
+
+@media screen and (max-width: 479px){
+.seo_content{
+	margin-top: -10%;
+}
+.digitalMarket_content{
+	margin-top: -20%;
+}
+}
+
+@media screen and (max-width: 767px){
+section{
+	text-align: center;
+}
+}
+@media screen and (min-width: 768px){
+ul.menu>li.nav_content:nth-child(3):after{
+	width: 66px;
+}
+/* ------------ 第一屏------------- */
+.market .digitalMarket{background-attachment: fixed;}
+.digitalMarket_content_box{
+	text-align: center;
+}
+}
+@media screen and (min-width: 1024px){
+/* ------------ 第一屏------------- */
+.header_text_container{text-align: center;}
+/* ------------ seo------------- */
+
+
+
+/* ------------ ad+blog------------ */
+.digitalMarket_content{
+	/* margin: 20px; */
+	position: relative;
+	z-index: 1;
+	top: 50px;	
+	transform: rotate(-105deg);
+}
+.digitalMarket_content div{
+
+	transform: rotate(105deg);
+}
+.market .tad_lg-4,.blog .tad_lg-4{
+	text-align: center;
+}
+.digitalMarket_content_box{
+	display: inline-block;
+	width: 370px;
+	height: 370px;
+	border:3px solid var(--gray_4) ;
+	text-align: center;
+	margin-top: 30%;
+}
+.market_content_box{
+	margin-left: -15%;
+}
+.blog_content_box{
+	margin-right: -15%;
+	position: relative;
+	z-index: 1;
+}
+.market_pic{
+	margin-right: -6%;
+
+}
+.blog_pic{
+	margin-left: -6%;
+}
+
+/* ------------ blog----------- */
+.blog_container{
+	display: flex;
+	z-index: 1;
+}
+.blog_content_container{
+	order: -1;
+}
+.digitalMarket_content_box .slogan_content{
+	font-size: 16px;
+}
+.digitalMarket_content_box .content-gray{
+	padding: 5px;
+}
+.seo_content{
+	width: 70%;
+}
+.seo_content p{
+	padding:10px 50px;
+}
+}
+@media screen and (min-width: 1440px){
+.seo_content{
+	width: 90%;
+}
+.seo_content p{
+	padding:10px 80px 30px;
+}
+}

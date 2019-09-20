@@ -1,0 +1,185 @@
+.clientWeb{
+	background-image:url('02image/clientWeb/bac1.jpg');
+	height: 80vh;	
+	background-size: cover;
+	font-size: 0;
+}
+.client_service_RWD .client_service_RWD_pic{
+	background-image:url('02image/clientWeb/RWD.png');
+}
+.client_service_talking_pic{
+	background-image:url('02image/clientWeb/talkung.png');
+}
+.client_service_function_pic{
+	background-image:url('02image/clientWeb/function2.jpg');
+}
+.client_service_pic{
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.client_service_content_container{
+	height: 400px;
+	position: absolute;
+}
+.client_service_content{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 40px 30px;
+	margin: 0px 30px;
+	background-color: hsla(250, 0%, 100%, .95)
+}
+.client_service p.content-gray{
+	padding-top:10px ;
+	text-align: justify;
+	-ms-text-justify: auto;
+	text-justify: auto;
+}
+.clientWeb .triangel_sm-after:after {
+	background-color: var(--black);
+	z-index: 1;
+}
+.client_service div.wrapper{
+	position: relative;
+}
+
+
+/* <!------------- 案例 -------------> */
+
+.case a.subcontent-gray{
+	color: var(--gray_2);
+	display: inline-block;
+}
+.case{
+	text-align: center;
+}
+.case p,.case .function,.case .link{
+	text-align: left;
+}
+.case .function,.case .link{
+	margin: 3% 3%;
+}
+.case p{
+	padding: 0;
+	line-height: 1.4em;
+}
+.case h4{
+	margin: 4% auto 2%;
+}
+
+.case .title-gray.line_decoration{
+	margin:5% 1% 8% 15%;
+
+}
+.case .title-gray.line_decoration:after{
+	margin-top: 4%;
+	width: 80%;
+	left:3%;
+	right: auto;
+}
+.line_decoration.title-gray{
+	color: var(--gray_1);
+	/* font-size: 18px; */
+}
+.case_content{
+	margin:5% 1% 12% 15%;
+}
+.link {
+	text-align: left;
+}
+@media screen and (min-width: 480px){
+.client_service_content{
+	padding: 80px 50px;
+	top: 115px;
+	margin: 0px 80px;
+}
+.case .function p,.case .link{
+	text-align: center;
+}
+.case .line_decoration.title-gray{
+	text-align: center;
+	margin:5% 0 4% ;
+}
+.case .title-gray.line_decoration:after{
+	right: 0;
+	width: 60%;
+	margin-top: 2%;
+}
+.case_content{
+	margin:5% auto 12% ;
+}
+}
+@media screen and (min-width: 768px){
+ul.menu>li.nav_content:nth-child(2):after{
+	width: 66px;
+}
+.client_service_pic{
+	height: 500px;
+}
+.client_service_content_container{
+	height: 500px;
+}	
+}
+@media screen and (min-width: 1024px){
+div.function_content{
+	box-sizing: border-box;
+	padding-left: 20px;
+}
+.case .function p,.link{
+	text-align: left;
+}
+.case .title-gray.line_decoration{
+	text-align: left;
+	margin:5% 10% 12% 12%;
+}
+.case .line_decoration.title-gray{
+	text-align: left;
+	margin:5% 0 3% ;
+	font-size: 26px;
+}
+.case .title-gray.line_decoration:after{
+	margin: 2% 1px 0px;
+}
+.case .link{
+	margin-left:18px ;
+	text-align: left;
+
+}
+.client_service_pic{
+	height: 455px;
+	z-index: -1;
+}
+.tad_lg-6.client_service_content_container{
+	height: 455px;
+	position: static;
+}
+.client_service_content{
+	position: static;
+	background-color: transparent;
+}
+.client_service_content{
+	background-color: var(--white_1);
+	margin: 9% 9%;
+}
+
+section.case .client_service_content_container,section.client_service_talking .client_service_content_container{
+	/* background-color: var(--white_1); */
+	height: 455px;
+}
+.client_service_RWD .client_service_content{
+	position: absolute;
+	background-color: hsla(250, 0%, 100%, .6);
+	width: 35%;
+	top: 48px;
+	left: 50px;
+	margin: 0;
+}
+
+.client_service_function .wrapper{
+	display: flex; 
+}
+.client_service_content_container{
+	order: -1;
+}
+}

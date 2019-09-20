@@ -1,0 +1,278 @@
+/* ------------select ------------ */
+.select{
+	margin: 8% 0 10%;
+	text-align: center;
+	font-size: 0;
+}
+.select a{
+	display: inline-block;
+	padding: 8px 5px;
+	position: relative;
+	margin: 0 15px;
+}
+.select a+a:after{
+	content: '';
+	display: block;
+	height: 20px;
+	width: 1px;
+	background-color:  var(--gray_3);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: -15px;
+	margin: auto;
+}
+.select a:before{
+	content: '';
+	display: block;
+	height: 2px;
+	background-color: var(--red);
+	position: absolute;
+	bottom: -5px;
+	width: 0;
+	transition: 1s;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+.select a:nth-child(3):before{
+	width: 75px;
+}
+/* -------------案例 ------------ */
+.works{
+	text-align: center;
+}
+
+.works_item{
+	position: relative;
+	box-sizing: border-box;
+	margin:0% 10% 14%;
+}
+
+.works_content h4{
+	padding: 15px 0px 5px;
+}
+.slogan_content{
+	text-align: center;
+}
+.link{
+	display: none;
+}
+/* - ------------page ------------ -- */
+.page{
+	text-align: center;
+}
+.pages_container{
+	display: inline-block;
+}
+.page td{
+	position: relative;
+	width: 30px;
+	height: 25px;
+	border: 1px solid #ddd;
+	line-height: 25px;
+	border-radius: 2px;
+}
+.page table{
+	display: none;
+}
+td .fas{
+	top: -18px;
+}
+.page tr td:nth-child(2) a,.page tr td a:hover{
+	color: var(--red);
+}
+/* ------------ 手機------------ */
+@media screen and (max-width: 767px){
+
+/* ------------ 第一屏 ------------ */
+.worksWeb img{
+	display: none;
+}
+.worksWeb{
+	height: 300px;
+	background-image: url('02image/ＷorksWeb/phone_banner2.png');
+}
+.works h4{
+	/* margin-top: 10%; */
+}
+}
+@media screen and (max-width:479px){
+.works h4{
+	/* margin-top: 13%; */
+}
+}
+/* ------------ 平板----------- */
+@media screen and (min-width:768px){
+ul.menu>li.nav_content:nth-child(5):after{
+	width: 66px;
+}
+/* ------------ 第一屏 ------------ */
+.worksWeb.header{
+	height: 600px;
+	overflow: hidden;
+}
+.worksWeb .worksWeb_pic1{
+	transform: scale(2);
+	position: relative;
+	top: 60px;
+	left: 20px;
+	display: block;
+	animation: pic_in 1.5s -0.7s;
+
+}
+.worksWeb .worksWeb_pic2{
+	transform: scale(1.6);
+	position: relative;
+	z-index: -1;
+	left: 170px;
+	top: -170px;
+	display: block;
+	animation: pic0_in 1.5s -0.7s;
+
+}
+@keyframes pic_in{
+	0%{
+		left: -100000px;
+		top: 10000px;
+	}
+	100%{
+		top: 60px;
+		left: 20px;
+	}
+
+}
+@keyframes pic0_in{
+	0%{
+		left:100000px ;
+		top: -1000px;
+	}
+	100%{
+		left: 170px;
+		top: -170px;
+	}
+
+}
+
+
+}
+/* ------------桌機--------- */
+@media screen and (min-width:1024px){
+/* ------------ 第一屏 ------------ */
+.worksWeb .worksWeb_pic1{
+	animation: pic1_in 1.5s -0.7s;
+}
+.worksWeb .worksWeb_pic2{
+	transform: scale(1.4);
+	left: 240px;
+	top: -170px;
+	animation: pic2_in 1.5s -0.7s;
+}
+.select{
+	margin: 3%;
+}
+.page table{
+	display:block;
+}
+.page .more{
+	display: none;
+}
+/* ------------動畫----------- */
+@keyframes pic1_in{
+	0%{
+		left: -100000px;
+		top: 10000px;
+	}
+	100%{
+		top: 60px;
+		left: 20px;
+	}
+
+}
+@keyframes pic2_in{
+	0%{
+		left:100000px ;
+		top: -1000px;
+	}
+	100%{
+		left: 240px;
+		top: -170px;
+	}
+
+}
+/* ------------大桌機----------- */
+@media screen and (min-width:1440px){
+/* ------------ 第一屏 ------------ */
+.worksWeb .worksWeb_pic3{
+	transform: scale(1.4);
+	left: 350px;
+	top: -220px;
+	animation: pic3_in 1.5s -0.7s;
+
+}
+.select{
+	margin: 2%;
+}
+.select a:hover:before{
+	width: 95px;
+	transition: 1s;
+}
+.select a:nth-child(1):hover:before{
+	width: 48px;
+	transition: width .7s;
+}
+.works_item{
+
+	box-shadow: 0px 0px 5px 3px var(--gray_4);
+}
+.works .link{
+	opacity: 0;
+}
+.works h4{
+	color: hsla(0, 0%, 100%, 1.0)
+}
+.works .slogan_content{
+	color: hsla(0,0%,100%,.8);
+}
+.works .link{
+	width: 5%;
+	margin: 10px auto;
+	display: block;
+}
+.works_content{
+	position: absolute;
+	padding:10px 0px 0px ;
+	z-index: 1;
+	background-color:hsla(250,10%,10%,.7);
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 29%;
+	bottom: 20%;
+}
+.works_item:hover .works_content{
+	top: 0;
+	bottom: 0;
+	transition:  top 1s ,bottom 1s;
+}
+.works_item:hover .link{
+	opacity: 1;
+	transition: 1s;
+}
+.works_item:hover h4{
+	margin-top: 21.7%;
+	transition: 1s;
+}
+@keyframes pic3_in{
+	0%{
+		left:100000px ;
+		top: -10000px;
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+		left: 350px;
+		top: -220px;
+	}
+}
+}
